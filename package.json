@@ -6,7 +6,7 @@
   "dependencies": {
     "lazysizes": "^4.0.4",
     "normalize.css": "^8.0.0",
-    "picturefill": "^3.0.2",
+    "picturefill": "^3.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.3",
