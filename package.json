@@ -1,0 +1,48 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Front-end Projects",
+  "main": "index.js",
+  "dependencies": {
+    "lazysizes": "^4.0.4",
+    "normalize.css": "^8.0.0",
+    "picturefill": "^3.0.2",
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.6.3",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-modernizr": "^2.0.4",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.3.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-svg2png": "^2.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gulp-usemin": "^0.3.29",
+    "gulp-watch": "^5.0.0",
+    "postcss-hexrgba": "^1.0.1",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savagecoding/boilerplate.git"
+  },
+  "author": "John Dinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savagecoding/boilerplate/issues"
+  },
+  "homepage": "https://github.com/savagecoding/boilerplate#readme"
+}
