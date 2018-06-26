@@ -1,0 +1,184 @@
+.nav-bar {
+
+    position: relative;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-top: 1px solid $secondaryText;
+    border-bottom: 1px solid $secondaryText;
+    background-color: $textPrimary;
+    z-index: 9;
+    transition: all 400ms ease;
+
+    &__logo {
+        display: inline;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        text-align: start;
+
+        @mixin atSmall {
+            font-size: 2.5rem;
+        }
+
+        @mixin atMedium {
+            display: inline-block;
+            border-right: 1px solid $secondaryText;
+            padding-right: 2rem;
+            float: left;
+        }
+    }
+
+    &__pull-right {
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+        margin-left: -40%;
+        transform: scale(0.7);
+        transition: all 400ms ease;
+
+        @mixin atMedium {
+            line-height: 2.875rem;
+            vertical-align: middle !important;
+            position: relative;
+            visibility: visible;
+            float: right;
+            opacity: 1;
+            transform-origin: 100% 50%;
+        }
+
+        li {
+            float: none;
+            font-size: 2rem;
+            margin-top: 2rem;
+
+            @mixin atMedium {
+                float: left;
+                padding-left: 2rem;
+                margin-top: 0;
+            }
+
+            @mixin atLarge {
+                padding-left: 3.5rem;
+            }
+        }
+
+        a:hover {
+            border-bottom: 2px solid $defaultPrimary;
+            padding-bottom: 0.5rem;
+            transition: all 500ms ease;
+        }
+
+        &--trigger {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+            margin-left: 0;
+        }
+    }
+
+    &__menu-icon {
+        height: 20px;
+        width: 30px;
+        position: absolute;
+        right: 20px;
+        top: 26.5px;
+        z-index: 99;
+
+        &--trigger {
+
+            
+            &::before {
+                transform: rotate(45deg) scaleX(0.85);
+                transform-origin: 0 0;
+            }
+
+            .nav-bar__menu-icon__middle {
+                opacity: 0;
+                width: 20px;
+            }
+
+
+            &::after {
+                transform: rotate(-45deg) scaleX(0.85);
+                transform-origin: 0 100%;
+            }
+        }
+
+        @mixin atMedium {
+            visibility: hidden;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $primaryText;
+            transition: all 600ms ease;
+        }
+
+        &__middle {
+            position: absolute;
+            top: 8px;
+            height: 3px;
+            width: 100%;
+            background-color: $primaryText;
+            transition: all 300ms ease;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $primaryText;
+            transition: all 600ms ease;
+        }
+    }
+
+    &__wrapper {
+        height: 4.77375rem;
+
+        @mixin atSmall {
+            height: 5.33625rem;
+        }
+    }
+
+    /*====================
+           JavaScript
+    ======================*/
+
+    &--trigger {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 4px 9px rgba($primaryText, 0.5);
+    }
+
+    &--menu-open {
+        padding-bottom: 12rem;
+    }
+
+    /*====================
+          Navbar Global
+    ======================*/
+
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    &--fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+}

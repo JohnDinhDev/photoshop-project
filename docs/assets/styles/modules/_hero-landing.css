@@ -1,0 +1,56 @@
+.hero-landing {
+    height: 100vh;
+    text-align: center;
+    opacity: 0;
+    transition: all 500ms ease-in;
+
+    &__container {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+    }
+
+    &__text-content-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 0;
+
+        @mixin atSmall {
+            font-size: 5rem;
+        }
+
+        @mixin atMedium {
+            font-size: 7rem;
+        }
+
+        @mixin atLarge {
+            font-size: 9rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+
+        @mixin atSmall {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        left: 50%;
+        bottom: 4rem;
+        transform: translateX(-50%);
+
+        @mixin atSmall {
+            bottom: 9rem;
+        }
+    }
+}

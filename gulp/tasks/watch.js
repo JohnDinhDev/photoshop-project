@@ -3,7 +3,7 @@ import watch from 'gulp-watch'
 import { create } from 'browser-sync'
 const browserSync = create()
 
-gulp.task('watch', () => {
+gulp.task('watch', ['scripts', 'styles'], () => {
 
     browserSync.init({
         notify: false,
