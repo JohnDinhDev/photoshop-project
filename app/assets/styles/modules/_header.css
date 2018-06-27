@@ -1,5 +1,5 @@
 .header {
-    background-color: #eaecf2;
+    background-color: #f5f6f8;
     position: relative;
 
     &__text-container {
@@ -94,5 +94,9 @@
         @mixin atSmall {
             opacity: 1;
         }
+    }
+
+    &__features {
+        background-color: #f5f6f8;
     }
 }

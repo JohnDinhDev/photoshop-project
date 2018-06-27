@@ -2,15 +2,33 @@
 Instead edit gulp/templates/sprite */
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-609c2a43.svg');
+            background-image: url('../../assets/images/sprites/sprite-1cbfd11d.svg');
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-609c2a43.png');            
+            background-image: url('../../assets/images/sprites/sprite-1cbfd11d.png');            
         }
+
+    .icon--card {
+        width: 62px;
+        height: 45px;
+        background-position: 0 0;
+    }
+
+    .icon--edit {
+        width: 62px;
+        height: 62px;
+        background-position: 0 100%;
+    }
 
     .icon--logo {
         width: 38px;
         height: 34.73px;
-        background-position: 0 0;
+        background-position: 72.09302325581395% 66.41760066417599%;
+    }
+
+    .icon--mail {
+        width: 62px;
+        height: 48px;
+        background-position: 100% 0;
     }
