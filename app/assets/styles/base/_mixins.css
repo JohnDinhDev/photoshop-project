@@ -55,7 +55,7 @@
 }
 
 @define-mixin titleXLarge {
-    @media (min-width: 1310px) {
+    @media (min-width: 1400px) {
         @mixin-content;
     }
 }

@@ -312,8 +312,8 @@ Instead edit gulp/templates/sprite */
             -webkit-transform: none;
                     transform: none;
             width: auto;
-            top: 28%;
-            left: 20%
+            top: 25%;
+            left: 19%
     }
     }
 @media (min-width: 800px) {
@@ -326,7 +326,7 @@ Instead edit gulp/templates/sprite */
             top: 25%
     }
     }
-@media (min-width: 1310px) {
+@media (min-width: 1400px) {
 .header__text-container {
             top: 28%
     }
@@ -358,13 +358,13 @@ Instead edit gulp/templates/sprite */
     }
 @media (min-width: 900px) {
 .header__title {
-            font-size: 3.3rem
+            font-size: 2.9rem
     }
     }
 @media (min-width: 1010px) {
 .header__title {
             max-width: 26.25rem;
-            font-size: 3.5rem
+            font-size: 3.3rem
     }
     }
 @media (min-width: 1200px) {
@@ -372,7 +372,7 @@ Instead edit gulp/templates/sprite */
             font-size: 3.8rem
     }
     }
-@media (min-width: 1310px) {
+@media (min-width: 1400px) {
 .header__title {
             font-size: 4.2rem
     }
@@ -382,12 +382,19 @@ Instead edit gulp/templates/sprite */
     }
 @media (min-width: 530px) {
 .header__subtitle {
-            font-size: 0.7rem
+            font-size: 0.7rem;
+            padding-left: 2px
     }
     }
 @media (min-width: 800px) {
 .header__subtitle {
-            font-size: 1rem
+            font-size: 1rem;
+            padding-left: 3px
+    }
+    }
+@media (min-width: 1200px) {
+.header__subtitle {
+            padding-left: 6px
     }
     }
 .header__image {
