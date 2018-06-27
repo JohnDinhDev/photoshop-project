@@ -1,0 +1,92 @@
+.header {
+    background-color: #eaecf2;
+    position: relative;
+
+    &__text-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+
+        @mixin atSmall {
+            text-align: left;
+            transform: none;
+            width: auto;
+            top: 28%;
+            left: 20%
+        }
+        @mixin atMedium {
+            top: 23%;
+        }
+
+        @mixin atLarge {
+            top: 25%;
+        }
+
+        @mixin titleXLarge {
+            top: 28%;
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 2rem;
+
+        @mixin atSmall {
+            font-weight: 100;
+            max-width: 13rem;
+            font-size: 1.5rem;
+        }
+
+        @mixin titleXSmall {
+            max-width: 15rem;
+            font-size: 2rem;
+        }
+        
+        @mixin titleSmall {
+            max-width: 20rem;
+            font-size: 2.5rem;
+        }
+
+        @mixin titleMedium {
+            font-size: 3.3rem;
+        }
+
+        @mixin titleLarge {
+            max-width: 26.25rem;
+            font-size: 3.5rem;
+        }
+
+        @mixin atLarge {
+            font-size: 3.8rem;
+        }
+
+        @mixin titleXLarge {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 0.65rem;
+
+        @mixin atSmall {
+            font-size: 0.7rem;
+        }
+
+        @mixin atMedium {
+            font-size: 1rem;
+        }
+    }
+
+    &__image {
+        opacity: 0.3;
+
+        @mixin atSmall {
+            opacity: 1;
+        }
+    }
+}
