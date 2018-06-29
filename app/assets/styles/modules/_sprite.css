@@ -2,17 +2,23 @@
 Instead edit gulp/templates/sprite */
 
         .icon {
-            background-image: url('../../assets/images/sprites/sprite-1cbfd11d.svg');
+            background-image: url('../../assets/images/sprites/sprite-bdd22c52.svg');
         }
 
         .no-svg .icon {
-            background-image: url('../../assets/images/sprites/sprite-1cbfd11d.png');            
+            background-image: url('../../assets/images/sprites/sprite-bdd22c52.png');            
         }
 
     .icon--card {
         width: 62px;
         height: 45px;
         background-position: 0 0;
+    }
+
+    .icon--down-arrow {
+        width: 7.66px;
+        height: 4.83px;
+        background-position: 85.95495960116898% 46.98052265831457%;
     }
 
     .icon--edit {
